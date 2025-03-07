@@ -8,7 +8,10 @@
 </head>
 <body>
     <div class="calculator">
-        <div class="display" id="display">0</div>
+        <div class="display">
+            <div class="operator-indicator" id="operator-indicator"></div>
+            <div class="display-value" id="display-value">0</div>
+        </div>
         <div class="buttons">
             <button class="digit" data-value="7">7</button>
             <button class="digit" data-value="8">8</button>
@@ -26,9 +29,12 @@
             <button class="operator" data-value="-">-</button>
             
             <button class="digit" data-value="0">0</button>
+            <button class="digit" data-value=".">.</button>
+            <button class="backspace" id="backspace">←</button>
+            <button class="operator" data-value="+">+</button>
+            
             <button class="clear" id="clear">C</button>
             <button class="equal" id="equal">=</button>
-            <button class="operator" data-value="+">+</button>
         </div>
     </div>
     
